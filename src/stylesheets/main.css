@@ -1,0 +1,22 @@
+body {
+  margin: 0 auto;
+  background-color: #081d2d;
+  font-family: Roboto;
+}
+
+header {
+  text-align: center;
+}
+
+h1, h2 {
+  color: #e8971d;
+  margin-bottom: 0.5em;
+  text-align: center;
+  font-size: 3.5em;
+}
+
+p {
+  font-size: 2em;
+}
+
+/*# sourceMappingURL=main.css.map */

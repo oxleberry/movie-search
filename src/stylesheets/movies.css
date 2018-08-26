@@ -1,0 +1,62 @@
+.movieList {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.movieList .movie {
+  justify-self: center;
+}
+.movieList .movie ul {
+  display: grid;
+  grid-template-columns: minmax(140px, 300px) 1fr;
+  grid-template-rows: 350px;
+  margin-top: 10px;
+  padding: 10px;
+}
+.movieList .movie ul .info {
+  display: grid;
+  grid-template-rows: 4fr 1fr 1fr;
+}
+.movieList .movie ul .info li {
+  background-color: #ffffff;
+  list-style: none;
+  padding: 16px 12px 8px;
+  border-bottom: 1px solid #FF9800;
+}
+.movieList .movie ul .info li:first-child {
+  text-transform: uppercase;
+  font-size: 1.5em;
+}
+.movieList .movie ul .info li:nth-child(3) {
+  border-bottom: none;
+}
+.movieList .movie ul .info li:nth-child(4) {
+  grid-row: span3;
+}
+.movieList .movie ul img {
+  max-height: 350px;
+}
+
+/* SEARCH STYLES ========================================= */
+.search {
+  text-align: center;
+}
+.search .form-control {
+  display: inline-block;
+  width: 40%;
+  margin-right: 1em;
+  margin-bottom: 2em;
+}
+
+/* LARGER SCREENS LAYOUT ========================================= */
+@media (min-width: 600px) {
+  body {
+    padding: 1em 1.5em;
+  }
+
+  .movieList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
+}
+
+/*# sourceMappingURL=movies.css.map */
