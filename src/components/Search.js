@@ -45,7 +45,6 @@ class Search extends Component {
               imdbID: '' }
          ]
       };
-      // this.onChange = this.onChange.bind(this);
       this.updateSearch = this.updateSearch.bind(this);
       this.handleKeyPress = this.handleKeyPress.bind(this);
    }
@@ -68,8 +67,7 @@ class Search extends Component {
       // grabs the users input value
       let query = (this.refs.query.value);
       // console.log(query);
-      const key = '&apikey=2cc90428';
-      // http://www.omdbapi.com/?s=star&apikey=2cc90428
+      const key = 'SECRET_KEY';
       let url = `${host}${searchInput}${query}${key}`;
 
       axios.get(url)
